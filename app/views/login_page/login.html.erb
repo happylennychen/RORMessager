@@ -3,7 +3,7 @@
 				商务短信平台
 			</div>
 			<div >
-				<form id="loginform" action="login.php" method="post">
+				<!--<form id="loginform" action="login.php" method="post">
 					<div class="loginform_row"> 
 						<label>用户名:</label>
 						<input type="text" class="loginform_input" name="username" />
@@ -15,6 +15,19 @@
 					<div class="loginform_row">
 						<input type="submit" id="loginform_submit" value="登&nbsp;&nbsp;&nbsp;&nbsp;陆" />
 					</div> 
-				</form>
+				</form>-->
+				<%= form_for(:session, url: sessions_path, html: { id: "loginform" }) do |f| %>
+					<div class="loginform_row">
+						<%= f.label "用户名" %>
+						<%= f.text_field :name, class: "loginform_input" %>
+					</div>
+					<div class="loginform_row">
+						<%= f.label "密码" %>
+						<%= f.password_field :password, class: "loginform_input" %>
+					</div>
+					<div class="loginform_row">
+						<%= f.submit "登陆", id: "loginform_submit" %>
+					</div> 
+				<% end %>
 			</div>
 		</div>
