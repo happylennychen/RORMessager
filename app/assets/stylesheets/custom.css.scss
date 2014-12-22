@@ -1,0 +1,248 @@
+@charset "utf-8";
+/**************************genaral*******************************/
+body{
+background-color:#3b5998;
+font-family:'Microsoft Yahei',STHeiti,sans-serif;
+padding:0px;margin:0px;
+font-size:small;
+color:gray;
+}
+h1,h2,h3,p,ul,ol,a,textarea{
+margin:0px;
+padding:0px;
+}
+.hidden{display:none;}
+/**************************genaral*end**************************/
+
+
+/**************************Login*******************************/
+#loginpanelwrap{width:400px; margin:120px auto auto auto; background-color:#FFFFFF;-moz-border-radius:10px;-webkit-border-radius:10px;-khtml-border-radius:10px; border-radius:10px;border:6px #c0cdd2 solid;}
+
+#loginheader{ color:#000000;width:100%; height:auto; text-align:center;font-size:26px; padding:25px 0px 0px 0px;}
+#loginform{width:auto;padding:20px;}
+.loginform_row{width:360px;margin:0 0 10px 0;}
+.loginform_row label{width:60px;float:left;padding:5px 0 0px 0;font-size:12px; color:#535E66; font-weight:bold; text-shadow:1px 1px #fff; text-align:left;}
+.loginform_input{width:250px;height:34px;padding:0px 0px 0 4px; background-color:#F4F6F7; border:1px #90A9B7 solid; color:#000;-moz-border-radius:4px;-webkit-border-radius:4px;border-radius:4px; line-height:34px;}
+#loginform_submit{ margin:0px 5px 0 0px;color:#fff;background: #7dc44e;-moz-border-radius:4px;-webkit-border-radius:4px;border-radius:4px;font-family:arial;font-size:12px;font-weight: bold;padding:8px 15px;text-align: center;cursor:pointer; border:none;text-shadow:1px 1px #4c9021;  margin-left:220px;}
+
+/**************************Login****end*************************/
+
+/**************************Header*******************************/
+#header{
+background-color:#293e6a;
+height:80px;
+/*
+margin: 15px 30px 0px 30px;
+*/
+padding:0px;margin:10px 10px 0 10px;
+}
+#header h1{
+letter-spacing:3px;
+padding:20px 0 0 50px;
+}
+
+#header div{
+float:right;
+padding:40px 50px 0px 0px;
+}
+#header div p{
+}
+#header div p a{
+color: #99cc33;
+}
+
+/**************************Header**end***************************/
+
+/**************************MainPanel**(include Sidebar and Content)*****************************/
+#MainPanel{
+display:table;
+border-spacing:10px;
+/*background-color:pink;*/
+width:100%;
+}
+#MainPanel > div{
+display:table-row;
+}
+
+/**************************Sidebar*******************************/
+#sidebar{
+display:table-cell;
+text-align:center;
+vertical-align:top;
+width:20%;
+}
+
+#sidebar ul{
+list-style:none;
+padding:10px;margin:0px;
+background-color:#293e6a;
+}
+#sidebar ul li{
+/*margin:5px 0px 5px 0px;*/
+padding:0px;margin:10px 0px;
+}
+#sidebar ul li a{
+color:#ffffff; 
+text-decoration:none;
+padding:0px;
+font-size:120%;
+letter-spacing:3px;
+padding:0px;margin:0px;
+}
+/**************************Sidebar**end**************************/
+
+/**************************content***(include different panels)****************************/
+#content{
+width:80%;
+background-color:#293e6a;
+padding:0px;
+display:table-cell;
+}
+/*******************************TextMessagePanel*************************************/
+#TextMessagePanel > div{
+border-spacing:10px;
+/*background-color:pink;*/
+width:100%;
+display:table;
+}
+#TextMessagePanel > div > div{
+display:table-row;
+}
+
+#TextMessagePanel > div > div > div{
+display:table-cell;
+}
+
+#TextMessagePanel > div > div > div:first-child{
+border-right-color:white;
+border-right-width:1px;
+border-right-style:solid;
+}
+
+#TextMessagePanel > div > div > div > div{
+display:table;
+}
+
+#TextMessagePanel > div > div > div > div > div{
+display:table-row;
+}
+
+#TextMessagePanel > div > div > div > div > div > div{
+display:table-cell;
+vertical-align:top;
+}
+
+#TextMessagePanel > div > div > div > div > div > p{
+text-align:right;
+font-weight:bold;
+font-size:105%;
+display:table-cell;
+vertical-align:top;
+}
+
+
+#message{
+height:70px;
+width:300px;
+}
+/*******************************TextMessagePanel*****end*******************************/
+/*******************************EnsurePanel************************************/
+#EnsurePanel{
+padding:20px;
+text-align:center;
+}
+#EnsurePanel>table{
+margin:auto;
+border:black solid 1px;
+}
+#EnsurePanel>table td{
+text-align:center;
+background-color:white;
+padding:5px;
+}
+#EnsurePanel>div{
+padding:10px;
+}
+#EnsurePanel>div>input{
+margin:10px;
+}
+#message1{
+height:70px;
+width:300px;
+text-align:left;
+padding:10px;
+border:0px;
+}
+/*******************************EnsurePanel*****end*******************************/
+/*******************************RecordPanel************************************/
+/*******************************RecordPanel*****end*******************************/
+/*******************************DRPanel************************************/
+#DRPanel{
+padding:10px;
+text-align:center;
+}
+#DRPanel>table{
+margin:auto;
+border:black solid 1px;
+}
+#DRPanel>table td{
+text-align:center;
+background-color:white;
+padding:5px;
+}
+#DRPanel>form{
+margin:10px;
+}
+#DRPanel>form>div{
+margin:auto;
+}
+#recmsg{
+height:70px;
+width:300px;
+text-align:left;
+padding:10px;
+border:0px;
+}
+/*******************************DRPanel*****end*******************************/
+/*******************************AMPanel************************************/
+#AMPanel{
+padding:80px;
+text-align:center;
+}
+#AMPanel>table{
+margin:auto;
+border:black solid 1px;
+}
+#AMPanel>table td{
+text-align:center;
+background-color:white;
+padding:5px;
+}
+#AMPanel>table td:last-child{
+width:200px;
+}
+/*******************************AMPanel*****end*******************************/
+/*******************************PasswordPanel************************************/
+#PasswordPanel{
+padding:60px;
+text-align:center;
+}
+#PasswordPanel>table{
+margin:auto;
+border:black solid 1px;
+}
+#PasswordPanel>table td{
+text-align:center;
+background-color:white;
+padding:5px;
+}
+#PasswordPanel>table td input{
+text-align:center;
+}
+#PasswordPanel>input{
+margin:10px;
+}
+/*******************************PasswordPanel*****end*******************************/
+
+/**************************content****end*************************/
+/**************************MainPanel*****end************************/
